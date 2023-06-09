@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-34c42472cfc2f22a901f93fcb142765f"}, "mark": {"type": "bar"}, "encoding": {"tooltip": [{"field": "text", "type": "nominal"}, {"field": "similarity", "type": "quantitative"}], "x": {"field": "similarity", "title": "Similarity Score", "type": "quantitative"}, "y": {"field": "text", "sort": "-x", "title": "Tweet", "type": "nominal"}}, "title": {"text": ["Similarity Scores of Top 10 Tweets"], "subtitle": ["Based on cosine similarity with the query: racist bone"], "color": "black", "subtitleColor": "gray"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-34c42472cfc2f22a901f93fcb142765f": [{"text": "\u201cIt\u2019s political season and the election is around the corner. They want to continue to push that racist narrative.\u201d @ainsleyearhardt @foxandfriends  And I am the least racist person. Black, Hispanic and Asian Unemployment is the lowest (BEST) in the history of the United States!", "similarity": 0.25831537938070626}, {"text": "BUT DIDN\u2019T SHE CALL HIM A RACIST??? DIDN\u2019T SHE SAY HE WAS INCOMPETENT???", "similarity": 0.2659375042410014}, {"text": "Congratulations to @RobinRoberts on celebrating 100 days in her bone marrow transplant recovery.  Robin is a special person.", "similarity": 0.2754697520007096}, {"text": "\"\"\"@JAGOfficial: @realDonaldTrump @ApprenticeNBC has inspired me to have a fundraiser event this Sunday at my home for a bone marrow case.\"", "similarity": 0.30284417527638735}, {"text": "\"\"\"@CandyStiltz: @realDonaldTrump Please run. I'd like someone with a back bone and can make decisions in office.\"\" Remember what you said!\"", "similarity": 0.3307022548217605}, {"text": "WOW, BLOOMBERG IS A TOTAL RACIST! https://t.co/2QLhxUxs1J", "similarity": 0.34557791622843936}, {"text": "\"\"\"@Southern_Anon63: I am a stone cold down to the bone democrat. But I will be voting @realDonaldTrump on Election Day.\"\"\"", "similarity": 0.3671478738973555}, {"text": "@DannyZuker Another racist remark by you, Danny, are you a racist?", "similarity": 0.41543042059550256}, {"text": "\"\"\"@bx_bobby: @realDonaldTrump what was racist about that story?\"\"  The story wasn't racist, just inaccurate and wrong. Bryant is dumb &amp, racist\"", "similarity": 0.42068399845800336}, {"text": "Those Tweets were NOT Racist. I don\u2019t have a Racist bone in my body! The so-called vote to be taken is a Democrat con game. Republicans should not show \u201cweakness\u201d and fall into their trap. This should be a vote on the filthy language, statements and lies told by the Democrat.....", "similarity": 0.4489016717377845}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

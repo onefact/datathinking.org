@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-53a7f6f6b18e09c2594f1c1200ceb616"}, "mark": {"type": "bar"}, "encoding": {"tooltip": [{"field": "text", "type": "nominal"}, {"field": "similarity", "type": "quantitative"}], "x": {"field": "similarity", "title": "Similarity Score", "type": "quantitative"}, "y": {"field": "text", "sort": "-x", "title": "Tweet", "type": "nominal"}}, "title": {"text": ["Similarity Scores of Top 10 Tweets"], "subtitle": ["Based on cosine similarity with the query: I'm not a racist, but"], "color": "black", "subtitleColor": "gray"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-53a7f6f6b18e09c2594f1c1200ceb616": [{"text": "Not only is @Toure a racist (and boring), he's a really dumb guy!", "similarity": 0.3478045920324613}, {"text": "\u201cIt\u2019s political season and the election is around the corner. They want to continue to push that racist narrative.\u201d @ainsleyearhardt @foxandfriends  And I am the least racist person. Black, Hispanic and Asian Unemployment is the lowest (BEST) in the history of the United States!", "similarity": 0.3528479682736727}, {"text": "I\u2019m used to it! https://t.co/HYmS2s4gEK", "similarity": 0.35774040558858067}, {"text": "\"\"\"@Mimekiller: @realDonaldTrump this from the guy who advocated freedom for mike Tyson?\"\" Oh, I guess I'm not a racist!\"", "similarity": 0.35833578184706927}, {"text": "\"\"\"I'm a former chief of police in a border town. I'm Hispanic, I'm proud to be Hispanic and I'm 100% behind Trump.\"\"https://t.co/8YtBU7j17m\"", "similarity": 0.3593587578031772}, {"text": "BUT DIDN\u2019T SHE CALL HIM A RACIST??? DIDN\u2019T SHE SAY HE WAS INCOMPETENT???", "similarity": 0.36325947097758127}, {"text": "I\u2019m with you all the way, thank you!\nhttps://t.co/JL15Lh7I7A", "similarity": 0.36634941467484916}, {"text": "WOW, BLOOMBERG IS A TOTAL RACIST! https://t.co/2QLhxUxs1J", "similarity": 0.47204493171792083}, {"text": "@DannyZuker Another racist remark by you, Danny, are you a racist?", "similarity": 0.5674605213891064}, {"text": "\"\"\"@bx_bobby: @realDonaldTrump what was racist about that story?\"\"  The story wasn't racist, just inaccurate and wrong. Bryant is dumb &amp, racist\"", "similarity": 0.5746366882878606}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

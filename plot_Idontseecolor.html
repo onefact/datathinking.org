@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-50278045b5f9f9defc89a962323f87ad"}, "mark": {"type": "bar"}, "encoding": {"tooltip": [{"field": "text", "type": "nominal"}, {"field": "similarity", "type": "quantitative"}], "x": {"field": "similarity", "title": "Similarity Score", "type": "quantitative"}, "y": {"field": "text", "sort": "-x", "title": "Tweet", "type": "nominal"}}, "title": {"text": ["Similarity Scores of Top 10 Tweets"], "subtitle": ["Based on cosine similarity with the query: I don't see color"], "color": "black", "subtitleColor": "gray"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-50278045b5f9f9defc89a962323f87ad": [{"text": "\"\"\"@BettyeBear: @realDonaldTrump Every working class (every color) knows Trump &amp, wants to be rich like him - faces light up\ud83d\ude0e\ud83d\ude0d  @macys\"\"\"", "similarity": 0.2770814104766562}, {"text": "They just don\u2019t get it! https://t.co/kGV9geK4l8", "similarity": 0.28454599924978535}, {"text": "A must see! https://t.co/WbLDGpaHJX", "similarity": 0.2877055312846372}, {"text": "\"Via @NRO by @LovelaceRyanD: \"\"Trump Slams Bush: \u2018I Don\u2019t See Him Winning, I Don\u2019t See There\u2019s Any Way\u2019\"\" http://t.co/jWlQRG4K4v\"", "similarity": 0.2879287877361309}, {"text": "If you don\u2019t have Borders, you don\u2019t have a Country!", "similarity": 0.2968334760733844}, {"text": "Many people look at successful people &amp, don't see anything but the end result. They don't see all the work that went into getting there.", "similarity": 0.3114735924704601}, {"text": "\"\"\"@Joe_Mangieri: Going to @Macys this weekend to get @realDonaldTrump ties! What's your favorite color Mr. Trump?\"\"  Blue but all are great!\"", "similarity": 0.3204712762624812}, {"text": "\"\"\"@SeanMichaelMc: @realDonaldTrump in Chicago for the first time, your building is amazing from the outside (cool color) to the inside.\"\"\"", "similarity": 0.33126823832038454}, {"text": "We must remember this truth: No matter our color, creed, religion or political party, we are ALL AMERICANS FIRST. https://t.co/FesMiQSKKn", "similarity": 0.3347624431007197}, {"text": "See you there! https://t.co/msBoZ1TbNX", "similarity": 0.4106610737860129}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

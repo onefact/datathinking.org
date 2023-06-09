@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-a305072e8fdf27ee510fea4e3516c2c7"}, "mark": {"type": "bar"}, "encoding": {"tooltip": [{"field": "text", "type": "nominal"}, {"field": "similarity", "type": "quantitative"}], "x": {"field": "similarity", "title": "Similarity Score", "type": "quantitative"}, "y": {"field": "text", "sort": "-x", "title": "Tweet", "type": "nominal"}}, "title": {"text": ["Similarity Scores of Top 10 Tweets"], "subtitle": ["Based on cosine similarity with the query: my friends are spanish"], "color": "black", "subtitleColor": "gray"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-a305072e8fdf27ee510fea4e3516c2c7": [{"text": "Two great and loyal friends! https://t.co/Fo2CLjc9YZ", "similarity": 0.27760096313778243}, {"text": "Spanish version of ObamaCare website  delayed http://t.co/s6xVqlpdJH Hitting google translate apparently too complicated. #MakeDCListen", "similarity": 0.29654800920217644}, {"text": "\"\"\"@Faithful_USA: I'm a 10th generation American of Spanish descent I support DonaldTrump Hispanic DOESN'T mean ILLEGAL #MakeAmericaGreatAgain\"", "similarity": 0.29976160248095846}, {"text": "My two great friends. Proud of you both! https://t.co/Fo2CLjc9YZ", "similarity": 0.30599996388888945}, {"text": "I will be doing Fox and Friends at 7 A.M. this morning.", "similarity": 0.30853337068137543}, {"text": "Doing Fox &amp, Friends at 7 A.M.", "similarity": 0.3426355816478486}, {"text": "I have gotten to know many Spanish speaking people as the owner of Trump National  Doral in Miami. They are smart, hard working and great", "similarity": 0.36520549803973423}, {"text": "Fox and Friends", "similarity": 0.3706240523836768}, {"text": "Hillary and her friends! https://t.co/q45tTapqMI", "similarity": 0.4067393782101613}, {"text": "\"\"\"@AleRdzCuevas: @realDonaldTrump you should be the President of MY country, Mexico.\"\"  I better learn Spanish very fast!\"", "similarity": 0.42900826681805426}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

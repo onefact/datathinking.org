@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-b1bcfb1b628faaaef46f04740572f429"}, "mark": {"type": "bar"}, "encoding": {"tooltip": [{"field": "text", "type": "nominal"}, {"field": "similarity", "type": "quantitative"}], "x": {"field": "similarity", "title": "Similarity Score", "type": "quantitative"}, "y": {"field": "text", "sort": "-x", "title": "Tweet", "type": "nominal"}}, "title": {"text": ["Similarity Scores of Top 10 Tweets"], "subtitle": ["Based on cosine similarity with the query: my friends are black"], "color": "black", "subtitleColor": "gray"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-b1bcfb1b628faaaef46f04740572f429": [{"text": "So true Wayne, and Lowest black unemployment in history! https://t.co/gDxxJdZQUm", "similarity": 0.34514139864634436}, {"text": "\u201cPresident Obama meant a lot to Black people, but he didn\u2019t do a thing for Black people\u201d. Vernon Jones, Georgia State Represenative, Trump supporter. @ffweekend", "similarity": 0.355658729859102}, {"text": "\u201cHow Trump Is Making Black America Great Again, The Untold Story Of Black Advancement in the Era of Trump.\u201d By Horace Cooper  A great new book!", "similarity": 0.3685390981004388}, {"text": "My two great friends. Proud of you both! https://t.co/Fo2CLjc9YZ", "similarity": 0.3766438833787155}, {"text": "I will be doing Fox and Friends at 7 A.M. this morning.", "similarity": 0.37976215882023295}, {"text": "Unemployment for Black Americans is the lowest ever recorded. Trump approval ratings with Black Americans has doubled. Thank you, and it will get even (much) better! @FoxNews", "similarity": 0.39184224725401734}, {"text": "For 47 years, Joe Biden viciously attacked Black Americans. He called young black men \u201csuper predators.\u201d To every black American: I am asking for your vote. This is your one and only chance to show Sleepy Joe what you think of his decision to attack you, jail you, and betray you!", "similarity": 0.4125153105800955}, {"text": "Doing Fox &amp, Friends at 7 A.M.", "similarity": 0.4217372917809562}, {"text": "Fox and Friends", "similarity": 0.45618725110056463}, {"text": "Hillary and her friends! https://t.co/q45tTapqMI", "similarity": 0.5006402516692638}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

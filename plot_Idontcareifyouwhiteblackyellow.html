@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-a756b700812cbe6c13efc1ff4f597952"}, "mark": {"type": "bar"}, "encoding": {"tooltip": [{"field": "text", "type": "nominal"}, {"field": "similarity", "type": "quantitative"}], "x": {"field": "similarity", "title": "Similarity Score", "type": "quantitative"}, "y": {"field": "text", "sort": "-x", "title": "Tweet", "type": "nominal"}}, "title": {"text": ["Similarity Scores of Top 10 Tweets"], "subtitle": ["Based on cosine similarity with the query: I don\u2019t care if you're white, black, yellow"], "color": "black", "subtitleColor": "gray"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-a756b700812cbe6c13efc1ff4f597952": [{"text": "I don\u2019t care that most of the workers not getting paid are Democrats, I want to stop the Shutdown as soon as we are in agreement on Strong Border Security! I am in the White House ready to go, where are the Dems?", "similarity": 0.21079686989185709}, {"text": "\"\"\"@fackinpeter: I don't care what @Time says, @realDonaldTrump is my person of the year\"\"\"", "similarity": 0.21114254498334362}, {"text": "\u201cHow Trump Is Making Black America Great Again, The Untold Story Of Black Advancement in the Era of Trump.\u201d By Horace Cooper  A great new book!", "similarity": 0.2120987870565833}, {"text": "NYC is cutting Police $\u2019s by ONE BILLION DOLLARS, and yet the @NYCMayor is going to paint a big, expensive, yellow Black Lives Matter sign on Fifth Avenue, denigrating this luxury Avenue. This will further antagonize New York\u2019s Finest, who LOVE New York & vividly remember the....", "similarity": 0.22265727676858552}, {"text": "This should have been taken care of years ago, the Trump Administration is taking care of these thugs now!https://t.co/ulqagIAtxI", "similarity": 0.22327951731750595}, {"text": "Unemployment for Black Americans is the lowest ever recorded. Trump approval ratings with Black Americans has doubled. Thank you, and it will get even (much) better! @FoxNews", "similarity": 0.2255100362172508}, {"text": "\u201cIf you don't have problems, you're pretending or you don't run your own business.\u201d \u2013Donald J. Trump  http://tinyurl.com/pqpfvm", "similarity": 0.23550426365094038}, {"text": "For 47 years, Joe Biden viciously attacked Black Americans. He called young black men \u201csuper predators.\u201d To every black American: I am asking for your vote. This is your one and only chance to show Sleepy Joe what you think of his decision to attack you, jail you, and betray you!", "similarity": 0.23740763861223504}, {"text": "\"\"\"@GOPjenna: \"\"I don't care about the game, I care about the PEOPLE.\"\" And that's exactly why WE THE PEOPLE love you so much! #Trump2016\"\"\"", "similarity": 0.24194193924783342}, {"text": "\"Does Madonna know something we all don't about Barack? At a concert she said \"\"we have a black Muslim in the White House.\"\"\"", "similarity": 0.2706034577526515}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-1036f7441c9b7e87bdd25cbb92c6e941"}, "mark": {"type": "bar"}, "encoding": {"tooltip": [{"field": "text", "type": "nominal"}, {"field": "similarity", "type": "quantitative"}], "x": {"field": "similarity", "title": "Similarity Score", "type": "quantitative"}, "y": {"field": "text", "sort": "-x", "title": "Tweet", "type": "nominal"}}, "title": {"text": ["Similarity Scores of Top 10 Tweets"], "subtitle": ["Based on cosine similarity with the query: can't be racist"], "color": "black", "subtitleColor": "gray"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-1036f7441c9b7e87bdd25cbb92c6e941": [{"text": "CNN\u2019s Don Lemon, the dumbest man on television, insinuated last night while asking a debate \u201cquestion\u201d that I was a racist, when in fact I am \u201cthe least racist person in the world.\u201d Perhaps someone should explain to Don that he is supposed to be neutral, unbiased &amp, fair,.....", "similarity": 0.32951364945783346}, {"text": "Those Tweets were NOT Racist. I don\u2019t have a Racist bone in my body! The so-called vote to be taken is a Democrat con game. Republicans should not show \u201cweakness\u201d and fall into their trap. This should be a vote on the filthy language, statements and lies told by the Democrat.....", "similarity": 0.331735264511791}, {"text": "The Amazon Washington Post did a story that I brought racist attacks against the \u201cSquad.\u201d No, they brought racist attacks against our Nation. All I do is call them out for the horrible things they have said. The Democrats have become the Party of the Squad!", "similarity": 0.33455714363342237}, {"text": "Is Jon Stewart a racist? See video--- http://t.co/ZbjW0Tny @thedailyshow", "similarity": 0.3421864605372324}, {"text": "Not only is @Toure a racist (and boring), he's a really dumb guy!", "similarity": 0.35163498707470364}, {"text": "\u201cIt\u2019s political season and the election is around the corner. They want to continue to push that racist narrative.\u201d @ainsleyearhardt @foxandfriends  And I am the least racist person. Black, Hispanic and Asian Unemployment is the lowest (BEST) in the history of the United States!", "similarity": 0.3567339063529912}, {"text": "BUT DIDN\u2019T SHE CALL HIM A RACIST??? DIDN\u2019T SHE SAY HE WAS INCOMPETENT???", "similarity": 0.36726007162678215}, {"text": "WOW, BLOOMBERG IS A TOTAL RACIST! https://t.co/2QLhxUxs1J", "similarity": 0.47724359386209175}, {"text": "@DannyZuker Another racist remark by you, Danny, are you a racist?", "similarity": 0.5737100017513272}, {"text": "\"\"\"@bx_bobby: @realDonaldTrump what was racist about that story?\"\"  The story wasn't racist, just inaccurate and wrong. Bryant is dumb &amp, racist\"", "similarity": 0.5809652002521389}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
