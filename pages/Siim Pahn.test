@@ -1,0 +1,99 @@
+Siim Pähn 
+
+Editor GPT-4
+
+
+Experience report on why I want to practice data thinking and what motivates me
+
+Current job: Working with large amounts of data from other people and raw machine data. Analyzing, improving, and putting it in the correct place.
+
+Realization: Data is becoming increasingly important and is the way of the future. Currently, data is more expensive than oil.
+
+Motivation: The biggest players in finance, technology, and business will be those who hold the keys to all the data. This data will be used to create products and services that improve the lives of everyday people. 
+
+Goal: To practice data thinking and improve skills in working with data. Data thinking involves technical skills, creativity and a willingness to question
+
+💽 + 🤔 Describe the research question from the previous homework 
+
+Since I didn't think of one before in class I just decided to find it by searching for datasets. I then found covid data for Estonia and that was my starting point. 
+
+The data is related to the COVID-19 pandemic in Estonia.
+
+It contains information about the number of test id, gender, age, county country, result value, Date for which the data applies in ISO 8601 format (YYYY-MM-DD), Time the test was taken in ISO 8601 format and Time the test result was inserted in ISO 8601 format
+
+The data is collected by the Estonian Health Board and published on Kaggle available here.
+
+What is unknown: 
+
+The accuracy and completeness of the data is uncertain.
+
+The data may could not capture all cases, especially those that are asymptomatic or mild.
+
+It is unclear if the data includes information about COVID-19 variants and their prevalence in Estonia.
+
+Decisions that need to be made and by whom:
+
+I need to make the decisions on how to use the data and what interesting results can I get from it. 
+
+ 🧐💰 Describe the stakes of the research question 
+
+Since it is public data that anyone can download the stakes aren’t high. The data is anonymised with unique ids and the biggest stake is my grade. 
+
+ 💽 + 🤔 Describe the context of the data 
+
+The 'opendata_covid19_test_results.csv' dataset contains anonymized COVID-19 test results made in Estonia and published by the Republic of Estonia Health Board as open data. The dataset includes information such as age group, county, and test time data for each individual test.
+
+The data can be used to analyze the spread of COVID-19 among different age groups and counties in Estonia. It could also help create early warnings for certain age groups or counties.
+
+Regarding the context of the data, it's important to note that the data is anonymized to protect the privacy of the individuals who were tested. Some information, such as the context in which people were tested or any underlying medical conditions, is not included in the dataset.
+
+Overall, this dataset can be a useful resource for researchers, policymakers, and healthcare workers to better understand the spread of COVID-19 in Estonia and to help develop strategies to combat it.
+
+flowchart TD
+    A[Testing] -->|Provide sample| B(Make data anonymous)
+    B --> C[Testing] 
+    C -->D[Give results]
+    D -->E[Save results in database] 
+    E -->F[Give data out for further analysis]
+ 
+
+
+ 📐💄 Write the mathematics for the model (and visualization) you choose to use: write the mathematics in LaTeX or https://typst.app/ as we have been doing in class. 
+
+
+
+ 💽 + 🤔 Assess the analysis you have done: did you answer the research question you sought to answer? Could someone, just from reading your blog post, reproduce -- and, better yet -- replicate your work to understand what you did and why you did it? If you have not answered the research question to your satisfaction, what would you or someone else need to do to answer it more completely?
+
+
+ 💽 + 🤔 Reflect on the 🧘 social, emotional, technical, legal (?) journeys that were par for the course of this data thinking endeavour.
+
+I thoroughly dislike using Github and Visual Studio Code. The first 4 lectures should have been introductions on how to use them correctly. I get that the idea is to make us think about the questions and figure it out, but the vagueness and shortness of the points kind of make the learning process mute. 
+
+That was also I think reflected in the attendance of lectures due to the fact that as time went on the numbers went down to single digits. 
+
+The different new services used for school work submission with the random timeframes to complete them and not understanding the point of it all kind of left a bad taste in my mouth. With the addition of the bootcamp people with no real notice so you would just need to mute all notifications to not get spammed in the zullipchat.  
+
+Emotionally I left this work to be done last due to the reason that I really didn’t enjoy it.  
+
+ 📈 Include the interactive Altair visualization following the principles from the Visualization guest lecture in the blog post. Please refer to the resources Ismael sent us over email on best practices such as the visual grammar and using the story you want to tell as the title of visualizations, and the subtitle to convey the details!
+
+
+ 💽 Include the metadata for the dataset you analyzed to answer, in accord with the principles from Pascal Heus' guest lecture -- see the notes here from Pascal: https://www.datathinking.org/university-of-tartu#%F0%9F%8E%AD-march-23,-2023-
+
+
+
+ 📓 Include code snippets in python, SQL (duckdb), dbt necessary to download the data, standardize it, analyze it, visualize it, especially any parts that were difficult or led you down a rabbithole
+
+
+ 💬 Include all the ways in which you used (or decided not to use) a large language model to help you complete these steps, and add a https://gist.github.com/ public gist link documenting the prompts and responses you used along the way. If you decide to use a large language model such as Claude, GPT-4, etc to help you edit, please list it as an editor.
+
+
+ 💻 Include a link to the repository needed to replicate this blog post and visualization using the code snippets.
+
+
+ 🤔🧘🙏 Include any feedback about the learning journey you have experienced, especially through implicit or indirect instruction, or through other means than through the resources, skills, and mental models you have learned during explicit instruction. If you received help from a friend or stranger or lucky coincidence, document it here for the benefit of future learners!
+
+
+ion, or through other means than through the resources, skills, and mental models you have learned during explicit instruction. If you received help from a friend or stranger or lucky coincidence, document it here for the benefit of future learners!
+ 💽 In your pull request, make sure to add your blog post shortlink to the side navigation: https://github.com/onefact/blog.datathinking.org/blob/main/components/Shell/SideNav.js
+ 💄 Include any images or visuals that are copyright-free, creative commons, or midjourney-generated that you think help tell the story you want to tell!
