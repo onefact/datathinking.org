@@ -2,8 +2,8 @@
 name: "[Bootcamp Week 1] \U0001F974 \"Impostor Syndrome\", ☯️ Experience Report, \U0001F4DA
   Reading, \U0001F4CA Visualization"
 about: Week 1 homework for data thinking bootcamp :)
-title: "[Bootcamp Week 1] \U0001F974 \"Impostor Syndrome\", ☯️ Experience Report, \U0001F4DA
-  Reading, \U0001F4CA Visualization"
+title: "[Bootcamp Week 1] \U0001F974 \"Impostor Syndrome\", ☯️ Experience Report,
+  \U0001F4DA Reading, \U0001F4CA Visualization"
 labels: ''
 assignees: ''
 
