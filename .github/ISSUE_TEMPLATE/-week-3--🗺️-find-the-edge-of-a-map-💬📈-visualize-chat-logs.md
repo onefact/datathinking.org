@@ -1,5 +1,5 @@
 ---
-name: "[Week 3] \U0001F5FA️ Find the edge of a map \U0001F4AC\U0001F4C8 Visualize
+name: "[Bootcamp Week 3] \U0001F5FA️ Find the edge of a map \U0001F4AC\U0001F4C8 Visualize
   chat logs"
 about: Week 3 homework
 title: "[Week 3] \U0001F5FA️ Find the edge of a map \U0001F4AC\U0001F4C8 Visualize
