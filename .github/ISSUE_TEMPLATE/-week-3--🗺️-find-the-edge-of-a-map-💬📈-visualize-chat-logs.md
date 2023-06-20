@@ -29,7 +29,7 @@ assignees: ''
 # Watch
 - [ ] Watch Berger's Ways of Seeing episode on the Language of Advertising: https://archive.org/details/WaysofSeeing/Ways.of.Seeing.S01E04.Language.of.Advertising.1974.VHSRip.AAC2.0.x264-rattera.mp4
 
-# Do
+# Code, Visualize, Install
 - [ ] Use the Jupyter notebook from lecture to visualize the Zulip chat data to answer a question you might have about it, and post a screenshot on Zulip -- Jupyter notebook: https://github.com/onefact/datathinking.org-codespace/blob/main/notebooks/princeton-university/week-3-zulip-chat-data-analysis.ipynb
 - [ ] Use homebrew to install `rectangle` on Mac (https://formulae.brew.sh/cask/rectangle) or use Chocolatey to install `powertoys` on Windows (https://community.chocolatey.org/packages/powertoys, documentation [here](https://learn.microsoft.com/en-us/windows/powertoys/fancyzones)) and try using either to rearrange windows with keyboard shortcuts
 - [ ] Test using `maccy` on Mac or `copyq` on Windows for clipboard management (try using the keyboard shortcut to, for example, copy and paste some experience reports from datathinking.zulipchat.com into a large language model)
