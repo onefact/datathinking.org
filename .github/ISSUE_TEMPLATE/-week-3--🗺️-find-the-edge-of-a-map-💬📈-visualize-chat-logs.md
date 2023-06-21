@@ -25,7 +25,8 @@ assignees: ''
 - [ ] https://subpixel.space/entries/life-after-lifestyle/ (or listen to this being read: https://youtu.be/iK3oK50AFlg)
 - [ ] Read this zine: https://www.jennyodell.com/free-watch.html
 - [ ] Read about time, temporality, and the history of capitalism: https://sci-hub.se/https://doi.org/10.1093/pastj/gtz014
-
+- [ ] Read about numbers and nutrition, mental health, diet, and exercise: https://www.thenourishmentproject.com/ - what is lost when we regain control using numbers? Who decides what "good" numbers mean or are as we use them to make sense of ourselves?
+      
 # Watch
 - [ ] Watch Berger's Ways of Seeing episode on the Language of Advertising: https://archive.org/details/WaysofSeeing/Ways.of.Seeing.S01E04.Language.of.Advertising.1974.VHSRip.AAC2.0.x264-rattera.mp4
 
