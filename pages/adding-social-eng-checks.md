@@ -149,3 +149,14 @@ However, as with all machine learning models, there are limitations and areas fo
 
 The fusion of NLP, AI, and cybersecurity provides an exciting and crucial area for research. As we continue to refine our models and methodologies, we hope to contribute significantly to the detection and prevention of social engineering attacks, fostering a safer digital environment for all users.
 
+
+## References 
+
+In our ongoing efforts to innovate and disrupt, we frequently draw upon thought-leadership and industry insights. One such resource is an insightful guide on deceptive design types by [Deceptive Design](https://www.deceptive.design/types). This guide gives us a comprehensive look at the various deceptive design types prevalent in the industry today.
+
+According to Deceptive Design:
+
+> "Design can be used to deceive users into doing things they might not want to do, but what benefits the company in question. These designs are often used to trick users into giving away their data, clicking on ads or buying services."
+
+By being aware of such practices, we ensure our design philosophy remains user-centric, transparent, and free from deceptive tactics.
+
