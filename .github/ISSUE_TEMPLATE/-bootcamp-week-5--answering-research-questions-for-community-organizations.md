@@ -46,3 +46,4 @@ assignees: ''
 # Watch
 - [ ] Pick an episode of "Can't Get You Out of My Head" (https://thoughtmaybe.com/cant-get-you-out-of-my-head/)
 > Reflect on the above readings about what data can and can't capture, how emotions can be considered data we all receive and perceive, and how many decisions that may seem to be influenced by data might just be the result of a small number of people making decisions based on emotions
+- [ ] Watch the guest data thinking lecture on visualization and style guides that are worth using with your community organization and the `altair` visualization library we have been using -- such as having a title for every visualization that tells a story, and a subtitle that gives more detail: https://panopto.ut.ee/Panopto/Pages/Viewer.aspx?id=1b8a6e6c-3188-44ab-a9cb-afcd00592b44
