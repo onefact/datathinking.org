@@ -35,6 +35,8 @@ assignees: ''
 - [ ] Read about how a writer writes about writing: https://georgesaunders.substack.com/p/on-worry
 > Consider how you can use the same tools we have been learning (GPT, visualization, data analysis) to use storytelling, narrative devices, data to your advantage in telling stories that matter to you beyond this summer.
 - [ ] Read these 10 pages on storyboarding a research question and ways to answer it with post-its on a wall, and think about whether it might be worth trying it out over the upcoming weeks: https://drive.google.com/file/d/13TROfdnueRFFYptMUElhWclxO4EluFGL/view?usp=sharing
+- [ ] Read about the principles of interaction at interactionprinciples.org.
+> Which do you agree with? Disagree with? Are these too reductive or too broad?
 - [ ] Supplemental -- if you are curious to learn more, read the excerpts from Black Heart, Laughing Saints, and When Your Data Make You Cry: https://drive.google.com/file/d/1gIMYoXXPDLybhqYjLCDffxX7dLTatKZX/view?usp=drive_link
 
 # Watch
