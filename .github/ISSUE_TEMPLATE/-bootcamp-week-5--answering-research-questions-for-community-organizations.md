@@ -26,7 +26,8 @@ assignees: ''
 # Read
 - [ ] Read the goals of the community organizations and the descriptions of the datasets they are making available to you: https://docs.google.com/document/d/1eRARhom1yk1UdPpPyfOAKm9rMDXqlG43fmS0QFMwzOE/edit?usp=sharing
 - [ ] Read this zine and perhaps print it out if it seems helpful! https://jvns.ca/wizard-zine.pdf
-- [ ] Read about active listening and motivational interviewing through a storytelling lens: https://docs.google.com/document/d/194ofWUo9gAVxM7GlvCNDp8GP1a2xHt3TyW58J48H4b4/edit?usp=sharing -- and think about how ethnographic research, surveys, qualitative data relies on interpersonal skills like this, and how much data and data analysis depend on things like trust, rapport, empathy among different stakeholders
+- [ ] Read about active listening and motivational interviewing through a storytelling lens: https://docs.google.com/document/d/194ofWUo9gAVxM7GlvCNDp8GP1a2xHt3TyW58J48H4b4/edit?usp=sharing
+> Consider how ethnographic research, surveys, qualitative data relies on interpersonal skills like this, and how much data and data analysis depend on things like trust, rapport, empathy among different stakeholders. Might you practice some of these skills in an informational interview related to your work with the community organization your team is working with?
 - [ ] Read about mirror neurons and how some ethnographers think about collecting data based on their experiences: https://drive.google.com/file/d/1JYDrFMUaH3sD80ElfLuwXiv8X3on8tMB/view?usp=sharing
 - [ ] Read about the stratifying power of emotion: https://drive.google.com/file/d/1gIMYoXXPDLybhqYjLCDffxX7dLTatKZX/view?usp=sharing
 - [ ] Read about cross-cultural comparisons may have influenced global geopolitics: https://www.palladiummag.com/2021/10/11/the-triumph-and-terror-of-wang-huning/
