@@ -21,8 +21,8 @@ import 'codemirror/lib/codemirror.css';
 
 import '../public/globals.css';
 
-const TITLE = 'One Fact';
-const DESCRIPTION = 'Our mission is to change global healthcare using open source principles.';
+const TITLE = 'Data Thinking';
+const DESCRIPTION = 'Open source courses for understanding AI, data, startups, and business.';
 const MARKDOC = `
 
 
