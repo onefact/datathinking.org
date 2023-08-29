@@ -6,8 +6,8 @@ const items = [
   {
     title: 'Institutions',
     links: [
-      { href: '/university-of-tartu', children: 'University of Tartu (Spring 2023)' },
-      { href: '/sales-startups-business', children: 'Sales & Startups - University of Tartu (Fall 2023)' },
+      { href: '/university-of-tartu', children: 'Pilot - Tartu (Spring 2023)' },
+      { href: '/sales-startups-business', children: 'Sales & Startups - Tartu (Fall 2023)' },
       // { href: '/introduction', children: 'Introduction' },
       // { href: '/syllabus', children: 'Syllabus' },
       // { href: '/roadmap-to-chatgpt', children: 'Roadmap' }
